@@ -41,15 +41,6 @@
 .button.loading:hover {
   opacity: 1;
 }
-.button.loading::before {
-  content: '';
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  background-size: cover;
-  margin-right: 0.5rem;
-  background-image: url("./loading.svg");
-}
 .button:disabled {
   cursor: default;
   background-color: #cccccc;
