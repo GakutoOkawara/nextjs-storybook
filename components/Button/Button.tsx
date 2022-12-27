@@ -1,6 +1,14 @@
 import styles from "./Button.module.css"
 
-export const Button = (size: string, variant: string, loading: boolean, fullWidth: boolean, children: string, {...props}) => {
+type Button = {
+  size?: string
+  variant?: string
+  loading?: boolean
+  fullWidth?: boolean
+  children?: string
+}
+
+export const Button = ({size, variant, loading, fullWidth, children}: Button) => {
   const classNameList = [styles.button]
 
   if(size) classNameList.push(styles[`size-${size}`])
@@ -11,7 +19,7 @@ export const Button = (size: string, variant: string, loading: boolean, fullWidt
   const classNames = classNameList.join(" ")
 
   return (
-    <button {...props} className={classNames}>
+    <button className={classNames}>
       {children}
     </button>
   )
