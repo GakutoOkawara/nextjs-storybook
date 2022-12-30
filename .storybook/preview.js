@@ -4,6 +4,23 @@ export const parameters = {
     matchers: {
       color: /(background|color)$/i,
       date: /Date$/,
-    },
+    }
   },
+  backgrounds: {
+    default: "white",
+    values: [
+      {
+        name: "white",
+        value: "#ffffff"
+      },
+      {
+        name: "black",
+        value: "#222222"
+      },
+      {
+        name: "gray",
+        value: "#cccccc"
+      }
+    ]
+  }
 }

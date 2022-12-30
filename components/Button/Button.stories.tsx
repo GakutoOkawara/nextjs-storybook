@@ -38,3 +38,4 @@ FullWidth.args = {
   fullWidth: true,
   children: "ボタン"
 }
+FullWidth.storyName = "FullWidth(モバイル向け)"
