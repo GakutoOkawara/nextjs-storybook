@@ -4,38 +4,42 @@ import { Button } from './Button'
 
 export default {
   title: 'UI/Button',
-  component: Button
+  component: Button,
+  parameters: {
+    docs: {
+      description: {
+        component: "Buttonコンポーネントの説明文上書き"
+      }
+    }
+  }
 } as ComponentMeta<typeof Button>;
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
+const Template: ComponentStory<typeof Button> = (args) => (
+  <Button {...args}>ボタン</Button>
+)
 
 export const Small = Template.bind({})
 Small.args = {
-  size: 'small',
-  children: "ボタン"
+  size: 'small'
 }
 
 export const Large = Template.bind({})
 Large.args = {
-  size: 'large',
-  children: "ボタン"
+  size: 'large'
 }
 
 export const Outlined = Template.bind({})
 Outlined.args = {
-  variant: "outlined",
-  children: "ボタン"
+  variant: "outlined"
 }
 
 export const Attention = Template.bind({})
 Attention.args = {
-  variant: "attention",
-  children: "ボタン"
+  variant: "attention"
 }
 
 export const FullWidth = Template.bind({})
 FullWidth.args = {
-  fullWidth: true,
-  children: "ボタン"
+  fullWidth: true
 }
 FullWidth.storyName = "FullWidth(モバイル向け)"
