@@ -28,18 +28,11 @@
 }
 .button.variant-outlined {
   color: #006bd6;
-  border: 1px solid #006bd6;
+  border: 2px solid #006bd6;
   background-color: #ffffff;
 }
 .button.variant-attention {
   background-color: #d6004b;
-}
-.button.loading {
-  cursor: default;
-  pointer-events: none;
-}
-.button.loading:hover {
-  opacity: 1;
 }
 .button:disabled {
   cursor: default;
